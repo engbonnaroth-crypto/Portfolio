@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonnarorth - Designer Portfolio</title>
+
+    <!-- Load Bootstrap 5 CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./portfolio.css" />
+  </head>
+  <body>
+    <header class="navbar-custom-style">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container py-2">
+          <a class="navbar-brand fs-4 fw-bold text-gradient" href="#home"
+            >BONNARORTH</a
+          >
+
+          <div class="d-flex align-items-center ms-auto ms-lg-0 order-lg-2">
+            <!-- Theme Toggle -->
+            <button
+              id="themeSwitcher"
+              class="theme-toggle"
+              title="Toggle Theme"
+            >
+              <svg
+                id="themeIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                />
+              </svg>
+            </button>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div
+            class="collapse navbar-collapse justify-content-end order-lg-1"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <a
+              href="#contact"
+              class="btn btn-outline-warning rounded-pill px-4 ms-lg-4 fw-bold"
+              >Hire Me</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="py-5"
+        style="min-height: 70vh; display: flex; align-items: center"
+      >
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 animate-fade-in">
+              <h1 class="display-3 fw-bolder mb-3">
+                HI! I'M BONNARORTH
+                <br /><span class="text-gradient">I'M A WEB DEVELOPER</span>
+              </h1>
+              <p class="lead text-secondary mb-4">
+                Hey! I'm Bonnarorth, a web developer passionate about creating
+                websites that look great and work smoothly. I enjoy learning new
+                technologies and solving problems through code.
+              </p>
+              <div class="d-flex gap-3">
+                <a
+                  href="#contact"
+                  class="btn btn-warning btn-lg rounded-pill px-5 fw-bold"
+                  style="background: #ff8c00; border: none; color: white"
+                  >Get Started</a
+                >
+                <a
+                  href="#about"
+                  class="btn btn-outline-primary btn-lg rounded-pill px-5"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 text-center animate-fade-in">
+              <img
+                src="./photo/prof.jpeg"
+                alt="Portrait"
+                class="rounded-4 w-100 shadow-lg"
+                style="max-width: 400px"
+                onerror="this.src = 'https://placehold.co/400x400'"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" class="py-5">
+        <div
+          class="container"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div class="row align-items-center g-5">
+            <div class="col-lg-5 animate-fade-in">
+              <img
+                src="./photo/prof2.jpeg"
+                class="img-fluid rounded-4 shadow"
+                alt="About Me"
+                width="400px"
+              />
+            </div>
+            <div class="col-lg-7 animate-fade-in">
+              <h2 class="display-5 fw-bold mb-4">
+                About <span class="text-gradient">Me</span>
+              </h2>
+              <h2 class="display-6 fw-bold mb-4">
+                I AM AVAILABLE FOR
+                <span class="text-gradient">WEB DESIGN PROJECTS.</span>
+              </h2>
+              <p class="lead text-secondary mb-4">
+                I am a passionate Designer and Developer based in Cambodia. I
+                specialize in building user-centric digital experiences.
+              </p>
+              <div class="row g-3">
+                <div class="col-6 col-md-4">
+                  <div class="stat-card">
+                    <h4 class="fw-bold text-gradient mb-0">1+</h4>
+                    <small class="text-secondary">Years Exp.</small>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="stat-card">
+                    <h4 class="fw-bold text-gradient mb-0">4+</h4>
+                    <small class="text-secondary">Projects Done</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills Section -->
+      <section id="skills" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5 animate-fade-in">
+            <h2 class="display-5 fw-bold">
+              My <span class="text-gradient">Skills</span>
+            </h2>
+            <p class="text-secondary">
+              Proficiency levels in my core technologies.
+            </p>
+          </div>
+          <div class="row g-4">
+            <!-- Skills Loop -->
+            <div class="col-md-6 col-lg-3 animate-fade-in">
+              <div class="skill-card-container">
+                <div class="skill-header">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    class="skill-icon"
+                    alt="HTML"
+                  />
+                  <h3 class="skill-title fs-6 m-0">HTML</h3>
+                </div>
+                <div class="proficiency-box">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small>Proficiency</small>
+                    <small class="proficiency-value fw-bold" data-target="80"
+                      >0%</small
+                    >
+                  </div>
+                  <div class="custom-progress">
+                    <div class="custom-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CSS -->
+            <div class="col-md-6 col-lg-3 animate-fade-in">
+              <div class="skill-card-container">
+                <div class="skill-header">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    class="skill-icon"
+                    alt="CSS"
+                  />
+                  <h3 class="skill-title fs-6 m-0">CSS</h3>
+                </div>
+                <div class="proficiency-box">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small>Proficiency</small>
+                    <small class="proficiency-value fw-bold" data-target="65"
+                      >0%</small
+                    >
+                  </div>
+                  <div class="custom-progress">
+                    <div class="custom-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- JS -->
+            <div class="col-md-6 col-lg-3 animate-fade-in">
+              <div class="skill-card-container">
+                <div class="skill-header">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    class="skill-icon"
+                    alt="JS"
+                  />
+                  <h3 class="skill-title fs-6 m-0">Javascript</h3>
+                </div>
+                <div class="proficiency-box">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small>Proficiency</small>
+                    <small class="proficiency-value fw-bold" data-target="50"
+                      >0%</small
+                    >
+                  </div>
+                  <div class="custom-progress">
+                    <div class="custom-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Bootstrap -->
+            <div class="col-md-6 col-lg-3 animate-fade-in">
+              <div class="skill-card-container">
+                <div class="skill-header">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                    class="skill-icon"
+                    alt="Bootstrap"
+                  />
+                  <h3 class="skill-title fs-6 m-0">Bootstrap</h3>
+                </div>
+                <div class="proficiency-box">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small>Proficiency</small>
+                    <small class="proficiency-value fw-bold" data-target="50"
+                      >0%</small
+                    >
+                  </div>
+                  <div class="custom-progress">
+                    <div class="custom-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- C programming -->
+            <div class="col-md-6 col-lg-3 animate-fade-in">
+              <div class="skill-card-container">
+                <div class="skill-header">
+                  <img
+                    src="./photo/C_Programming.png"
+                    class="skill-icon"
+                    alt="JS"
+                  />
+                  <h3 class="skill-title fs-6 m-0">C programming</h3>
+                </div>
+                <div class="proficiency-box">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small>Proficiency</small>
+                    <small class="proficiency-value fw-bold" data-target="40"
+                      >0%</small
+                    >
+                  </div>
+                  <div class="custom-progress">
+                    <div class="custom-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- c++ programming -->
+            <div class="col-md-6 col-lg-3 animate-fade-in">
+              <div class="skill-card-container">
+                <div class="skill-header">
+                  <img
+                    src="./photo/ISO_C++.png"
+                    class="skill-icon"
+                    alt="Bootstrap"
+                  />
+                  <h3 class="skill-title fs-6 m-0">C++ programming</h3>
+                </div>
+                <div class="proficiency-box">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small>Proficiency</small>
+                    <small class="proficiency-value fw-bold" data-target="45"
+                      >0%</small
+                    >
+                  </div>
+                  <div class="custom-progress">
+                    <div class="custom-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- C# programming -->
+            <div class="col-md-6 col-lg-3 animate-fade-in">
+              <div class="skill-card-container">
+                <div class="skill-header">
+                  <img
+                    src="./photo/png-clipart-c-programming-language-logo-.png"
+                    class="skill-icon"
+                    alt="JS"
+                  />
+                  <h3 class="skill-title fs-6 m-0">C# programming</h3>
+                </div>
+                <div class="proficiency-box">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small>Proficiency</small>
+                    <small class="proficiency-value fw-bold" data-target="50"
+                      >0%</small
+                    >
+                  </div>
+                  <div class="custom-progress">
+                    <div class="custom-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Java programming -->
+            <div class="col-md-6 col-lg-3 animate-fade-in">
+              <div class="skill-card-container">
+                <div class="skill-header">
+                  <img
+                    src="./photo/java-text.png"
+                    class="skill-icon"
+                    alt="Bootstrap"
+                  />
+                  <h3 class="skill-title fs-6 m-0">Java programming</h3>
+                </div>
+                <div class="proficiency-box">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small>Proficiency</small>
+                    <small class="proficiency-value fw-bold" data-target="30"
+                      >0%</small
+                    >
+                  </div>
+                  <div class="custom-progress">
+                    <div class="custom-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--UX/UI-->
+            <div class="col-md-6 col-lg-3 animate-fade-in">
+              <div class="skill-card-container">
+                <div class="skill-header">
+                  <img
+                    src="./photo/UI.png"
+                    class="skill-icon"
+                    alt="Bootstrap"
+                  />
+                  <h3 class="skill-title fs-6 m-0">UX/UI</h3>
+                </div>
+                <div class="proficiency-box">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small>Proficiency</small>
+                    <small class="proficiency-value fw-bold" data-target="50"
+                      >0%</small
+                    >
+                  </div>
+                  <div class="custom-progress">
+                    <div class="custom-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Projects Section -->
+      <section id="projects" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5 animate-fade-in">
+            <h2 class="display-5 fw-bold">
+              My <span class="text-gradient">Projects</span>
+            </h2>
+            <p class="text-secondary">
+              A collection of my recent work and creations.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-4 animate-fade-in">
+              <div class="project-card">
+                <div class="project-img-container">
+                  <img
+                    src="./photo/program1.png"
+                    class="project-img"
+                    alt="Project Cake"
+                  />
+                </div>
+                <div class="project-body">
+                  <h4 class="fw-bold mb-3">Project Cake</h4>
+                  <p class="text-secondary mb-4">
+                    A delicious web experience for cake enthusiasts.
+                  </p>
+                  <div class="mb-4">
+                    <span class="tag-pill">HTML</span>
+                    <span class="tag-pill">CSS</span>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <a href="#" class="btn-project text-decoration-none"
+                      ><span>&lt;/&gt;</span> Code</a
+                    >
+                    <a href="#" class="btn-project text-decoration-none"
+                      ><span>&#128196;</span> Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4 animate-fade-in">
+              <div class="project-card">
+                <div class="project-img-container">
+                  <img
+                    src="./photo/UI02.png"
+                    class="project-img"
+                    alt="Project Clothes Shop"
+                  />
+                </div>
+                <div class="project-body">
+                  <h4 class="fw-bold mb-3">Project Clothes Shop</h4>
+                  <p class="text-secondary mb-4">
+                    Modern e-commerce platform for fashion. Best for people
+                    right now.
+                  </p>
+                  <div class="mb-4">
+                    <span class="tag-pill">UX/UI</span>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <a href="#" class="btn-project text-decoration-none"
+                      ><span>&lt;/&gt;</span> Code</a
+                    >
+                    <a href="#" class="btn-project text-decoration-none"
+                      ><span>&#128196;</span> Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4 animate-fade-in">
+              <div class="project-card">
+                <div class="project-img-container">
+                  <img
+                    src="./photo/program2.png"
+                    class="project-img"
+                    alt="Project Portfolio"
+                  />
+                </div>
+                <div class="project-body">
+                  <h4 class="fw-bold mb-3">Project Clothes Shop</h4>
+                  <p class="text-secondary mb-4">
+                    The first iteration of my personal portfolio.
+                  </p>
+                  <div class="mb-4">
+                    <span class="tag-pill">HTML</span>
+                    <span class="tag-pill">CSS</span>
+                    <span class="tag-pill">Bootstrap</span>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <a href="#" class="btn-project text-decoration-none"
+                      ><span>&lt;/&gt;</span> Code</a
+                    >
+                    <a href="#" class="btn-project text-decoration-none"
+                      ><span>&#128196;</span> Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-md-4 animate-fade-in">
+              <div class="project-card">
+                <div class="project-img-container">
+                  <img
+                    src="./photo/Island.jpeg"
+                    class="project-img"
+                    alt="Project Portfolio"
+                  />
+                </div>
+                <div class="project-body">
+                  <h4 class="fw-bold mb-3">Project Island</h4>
+                  <p class="text-secondary mb-4">
+                    The first iteration of my personal portfolio.
+                  </p>
+                  <div class="mb-4">
+                    <span class="tag-pill">HTML</span>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <a
+                      href="https://github.com/engbonnaroth-crypto/View_Island.git"
+                      class="btn-project text-decoration-none"
+                      ><span>&lt;/&gt;</span> Code</a
+                    >
+                    <a href="#" class="btn-project text-decoration-none"
+                      ><span>&#128196;</span> Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Get In Touch Section -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5 animate-fade-in">
+            <h2 class="display-5 fw-bold">
+              Get In <span class="text-gradient">Touch</span>
+            </h2>
+            <p class="text-secondary">
+              Have a project in mind? Let's build something together.
+            </p>
+          </div>
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 animate-fade-in">
+              <img
+                src="./photo/contact_pf.jpg"
+                alt="Contact Illustration"
+                class="contact-illustration shadow"
+                width="400px"
+              />
+            </div>
+            <div class="col-lg-6 animate-fade-in">
+              <div class="contact-container">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" id="fname" placeholder="First Name" />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" id="lname" placeholder="Last Name" />
+                    </div>
+                  </div>
+                  <input type="email" id="temail" placeholder="Email Address" />
+                  <input type="text" id="tphone" placeholder="Phone Number" />
+                  <textarea
+                    rows="5"
+                    id="tmessage"
+                    placeholder="Your Message"
+                  ></textarea>
+                  <button
+                    type="button"
+                    onclick="send()"
+                    class="btn btn-send-message shadow-sm"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 border-top border-secondary mt-5">
+      <div class="container text-center text-secondary">
+        <p>&copy; 2025 Bonnarorth. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./portfolio.js"></script>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>

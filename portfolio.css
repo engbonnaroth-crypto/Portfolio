@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  /* Dark Theme Defaults */
+  --bs-body-bg: #07091b;
+  --bs-body-color: #f8f8ff;
+  --secondary-bg-custom: #0c122b;
+  --accent-color: #d35400;
+  --card-border: rgba(255, 255, 255, 0.1);
+  --nav-bg: rgba(7, 9, 27, 0.9);
+  --contact-form-bg: #ffffff;
+  --contact-form-text: #333333;
+}
+
+[data-bs-theme="light"] {
+  --bs-body-bg: #f8f9fa;
+  --bs-body-color: #1a1a1a;
+  --secondary-bg-custom: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.1);
+  --nav-bg: rgba(248, 249, 250, 0.9);
+  --contact-form-bg: #f0f2f5;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Standard Sticky Navbar */
+.navbar-custom-style {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--card-border);
+  transition: background-color 0.3s ease;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--card-border);
+  background: transparent;
+  color: var(--bs-body-color);
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 140, 0, 0.1);
+}
+
+/* Skill Card Styles */
+.skill-card-container {
+  background: var(--secondary-bg-custom);
+  border: 1px solid var(--card-border);
+  border-radius: 1.5rem;
+  padding: 20px;
+  height: 100%;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.proficiency-box {
+  background: rgba(128, 128, 128, 0.05);
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  padding: 15px;
+}
+
+.custom-progress {
+  height: 8px;
+  background-color: #2d3748;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-progress-bar {
+  height: 100%;
+  background-color: #ff8c00;
+  width: 0%;
+  transition: width 1.5s ease-in-out;
+  border-radius: 10px;
+}
+
+/* Project Card Styles */
+.project-card {
+  background: var(--secondary-bg-custom);
+  border: 1px solid var(--card-border);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-img-container {
+  padding: 10px;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--card-border);
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: 1.5rem;
+}
+
+.tag-pill {
+  background-color: rgba(128, 128, 128, 0.2);
+  color: var(--bs-body-color);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.btn-project {
+  background-color: #e65100;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+  transition: opacity 0.3s;
+}
+
+.btn-project:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+/* Contact Form Styles */
+.contact-container {
+  background: var(--contact-form-bg);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: var(--contact-form-text);
+  transition: background-color 0.3s ease;
+}
+
+.contact-container input,
+.contact-container textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  background: #fff;
+  color: #333;
+}
+
+.btn-send-message {
+  background-color: #e65100;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.contact-illustration {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* General UI Elements */
+.text-gradient {
+  background-image: linear-gradient(90deg, #ff8c00, #ff4500);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.stat-card {
+  background: var(--secondary-bg-custom);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--card-border);
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease-out;
+}
+.animate-slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
